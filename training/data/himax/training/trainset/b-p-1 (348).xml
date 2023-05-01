@@ -1,0 +1,26 @@
+<annotation>
+	<folder>training_set_finetuning</folder>
+	<filename>b-p-1 (348).jpg</filename>
+	<path>/home/aurora/auro-windows/Desktop/tesi_utilities/dataset/26-08/bassa-confidenza/training_set_finetuning/b-p-1 (348).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>324</width>
+		<height>244</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>148</xmin>
+			<ymin>115</ymin>
+			<xmax>166</xmax>
+			<ymax>160</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,50 @@
+<annotation>
+	<folder>grandi_x_ft</folder>
+	<filename>l-i-2 (449).jpg</filename>
+	<path>/home/aurora/auro-windows/Desktop/tesi_utilities/dataset/26-08/bassa-confidenza/grandi_x_ft/l-i-2 (449).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>324</width>
+		<height>244</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Tin can</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>16</ymin>
+			<xmax>72</xmax>
+			<ymax>186</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Tin can</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>61</xmin>
+			<ymin>66</ymin>
+			<xmax>103</xmax>
+			<ymax>176</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Tin can</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>260</xmin>
+			<ymin>103</ymin>
+			<xmax>294</xmax>
+			<ymax>177</ymax>
+		</bndbox>
+	</object>
+</annotation>

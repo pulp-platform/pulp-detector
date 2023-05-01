@@ -1,0 +1,26 @@
+<annotation>
+	<folder>training_set_finetuning</folder>
+	<filename>l-m-1 (127).jpg</filename>
+	<path>/home/aurora/auro-windows/Desktop/tesi_utilities/dataset/26-08/bassa-confidenza/training_set_finetuning/l-m-1 (127).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>324</width>
+		<height>244</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Tin can</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>173</xmin>
+			<ymin>170</ymin>
+			<xmax>186</xmax>
+			<ymax>204</ymax>
+		</bndbox>
+	</object>
+</annotation>

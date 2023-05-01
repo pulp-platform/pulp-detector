@@ -1,0 +1,11 @@
+item {
+  name: "/m/04dr76w"
+  id: 1
+  display_name: "Bottle"
+}
+
+item {
+  name: "/m/02jnhm"
+  id: 2
+  display_name: "Tin can"
+}

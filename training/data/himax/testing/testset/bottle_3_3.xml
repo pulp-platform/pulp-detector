@@ -1,0 +1,26 @@
+<annotation>
+	<folder>buone_3</folder>
+	<filename>bottle_3_3.jpg</filename>
+	<path>/home/aurora/auro-windows/Desktop/tesi_utilities/dataset/bottle/buone_3/bottle_3_3.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>324</width>
+		<height>244</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Bottle</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>151</xmin>
+			<ymin>174</ymin>
+			<xmax>181</xmax>
+			<ymax>244</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>buone_2</folder>
+	<filename>tincan_2_42.jpg</filename>
+	<path>/home/aurora/auro-windows/Desktop/tesi_utilities/dataset/tin_can/buone_2/tincan_2_42.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>324</width>
+		<height>244</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Tin can</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>128</xmin>
+			<ymin>114</ymin>
+			<xmax>193</xmax>
+			<ymax>237</ymax>
+		</bndbox>
+	</object>
+</annotation>
