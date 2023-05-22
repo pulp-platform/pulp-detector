@@ -60,6 +60,13 @@ Summary of characteristics:
 
 We release here, as open source, all our code, hardware designs, datasets, and trained networks.
 
+## Setup
+
+Clone recursively to download all submodules
+
+```
+git clone git@github.com:pulp-platform/pulp-detector.git --recursive
+```
 
 
 ## PULP-Platforms refs
