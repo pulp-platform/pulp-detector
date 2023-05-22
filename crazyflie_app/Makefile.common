@@ -1,8 +1,7 @@
 # Common part of Makefile
 
 CRAZYFLIE_BASE=$(CURDIR)/../crazyflie-firmware
-CRAZYFLIE_BASE=/home/lamberti/work/crazyflie-firmware
-CRAZYFLIE_MODIFIED=/home/lamberti/work/crazyflie-firmware
+CRAZYFLIE_MODIFIED=$(CURDIR)/../crazyflie-firmware
 
 
 # Some firmware changes are required so the original files from the crazyflie-firmware are excluded
