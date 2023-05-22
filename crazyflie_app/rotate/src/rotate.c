@@ -12,7 +12,7 @@ predetermined distance in that direction.
                                                                                
  File:    rotate.c         
  Author:  Lorenzo Lamberti      <lorenzo.lamberti@unibo.it>                                             
- 		   Davide Graziani      <davide.graziani4@studio.unibo.it>
+ 		  Davide Graziani      <davide.graziani4@studio.unibo.it>
  Date:    08.04.2022                                                           
 -------------------------------------------------------------------------------*/
 
