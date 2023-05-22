@@ -10,7 +10,12 @@ Copyright (C) 2023 ***University of Bologna, KU Leuven, ETH Zürich,***. All rig
 
 
 ### **Videos** 
-- **Exploration and Detection**: [Demo](https://youtu.be/BTin8g0nyko) 
+
+**Exploration and Detection Demo**: [YouTube](https://youtu.be/BTin8g0nyko) 
+
+{% include youtube.html id="BTin8g0nyko" %}
+
+
 
 ### **Citing**
 
