@@ -1,0 +1,3 @@
+[submodule "crazyflie_app/crazyflie-firmware"]
+	path = crazyflie_app/crazyflie-firmware
+	url = git@github.com:bitcraze/crazyflie-firmware.git
