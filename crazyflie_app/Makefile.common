@@ -1,0 +1,17 @@
+# Common part of Makefile
+
+CRAZYFLIE_BASE=$(CURDIR)/../crazyflie-firmware
+CRAZYFLIE_BASE=/home/lamberti/work/crazyflie-firmware
+CRAZYFLIE_MODIFIED=/home/lamberti/work/crazyflie-firmware
+
+
+# Some firmware changes are required so the original files from the crazyflie-firmware are excluded
+# and the modified ones are added (add one line for each)
+SRC_FILES := $(filter-out $(CRAZYFLIE_BASE)/src/deck/drivers/src/multiranger.c, $(SRC_FILES))
+# add folders
+VPATH += ../crazyflie-firmware-modified
+
+include $(CRAZYFLIE_BASE)/Makefile
+
+TMPCFLAGS := $(CFLAGS)
+CFLAGS = $(filter-out -Wdouble-promotion -Werror, $(TMPCFLAGS))    # ignore conversion float to double warning
