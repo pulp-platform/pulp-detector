@@ -2,7 +2,7 @@
 
 Authors: *Lorenzo Lamberti*, *Luca Bompani*, *Manuele Rusci*, *Daniele Palossi* 
 
-Emails: <lorenzo.lamberti@unibo.it>  <luca.bompani5@unibo.it>  <manuele.rusci@kuleuven.be>  <dpalossi@iis.ee.ethz.ch>
+Emails: <lorenzo.lamberti@unibo.it>,  <luca.bompani5@unibo.it>,  <manuele.rusci@kuleuven.be>,  <dpalossi@iis.ee.ethz.ch>
 
 Copyright (C) 2023 ***University of Bologna, KU Leuven, ETH Zürich,***. All rights reserved.
 
