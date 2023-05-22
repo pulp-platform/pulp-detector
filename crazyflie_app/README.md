@@ -4,7 +4,7 @@ Here you can find the code running on the STM32 of the Crazyflie 2.1.
 
 The crazyflie application runs one of the four exploration policies described in the paper
 
-<img style="float: center;" src="../images/exploration_policies.png" width="80%">
+<img style="float: center;" src="../images/exploration_policies.png" width="100%">
 
 ## Instructions
 

@@ -6,7 +6,7 @@ Authors:*Lorenzo Lamberti* <lorenzo.lamberti@unibo.it>
         *Daniele Palossi* <dpalossi@iis.ee.ethz.ch>
 Copyright (C) 2023 ***University of Bologna, KU Leuven, ETH Zürich,***. All rights reserved.
 
-<img style="float: right;" src="images/cover.png" width="80%">
+<img style="float: left;" src="images/cover.png" width="100%">
 
 ### **Videos** 
 - **Exploration and Detection**: [Demo](https://youtu.be/BTin8g0nyko) 
