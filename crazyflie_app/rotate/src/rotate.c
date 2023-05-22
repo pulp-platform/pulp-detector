@@ -10,8 +10,9 @@ meantime acquires eight distance measurements which it will then use
 to determine the maximum distance; at this point it moves by a
 predetermined distance in that direction.
                                                                                
- File:    rotate.c                                                              
- Author:  Davide Graziani      <davide.graziani4@studio.unibo.it>
+ File:    rotate.c         
+ Author:  Lorenzo Lamberti      <lorenzo.lamberti@unibo.it>                                             
+ 		   Davide Graziani      <davide.graziani4@studio.unibo.it>
  Date:    08.04.2022                                                           
 -------------------------------------------------------------------------------*/
 
@@ -49,7 +50,7 @@ uint8_t landed = 0; 	// Flag for indicating whether the drone landed
 
 /* --------------- GLOBAL VARIABLES --------------- */
 
-#define ANGOLAR_ROTATION 45
+#define ANGULAR_ROTATION 45
 
 static setpoint_t fly_setpoint;
 int16_t valDistance[8], valFront;
@@ -202,14 +203,14 @@ int rotate()
 		/* --------------- Gradual rotation  --------------- */
 		for (int i = 0; i < 10; i++)
 		{
-			headToPosition (posXrotate, posYrotate, flying_height, posYawrotate + (ANGOLAR_ROTATION * i)*0.1f);
+			headToPosition (posXrotate, posYrotate, flying_height, posYawrotate + (ANGULAR_ROTATION * i)*0.1f);
 			vTaskDelay(50);
 		}
 
-		/* --------------- Angolar correction  --------------- */
+		/* --------------- Angular correction  --------------- */
 		for (int i = 0; i < 10; i++)
 		{
-			headToPosition (posXrotate, posYrotate, flying_height, posYawrotate + ANGOLAR_ROTATION);
+			headToPosition (posXrotate, posYrotate, flying_height, posYawrotate + ANGULAR_ROTATION);
 			vTaskDelay(50);
 		}
 	}
@@ -234,14 +235,14 @@ int rotate()
 	/* --------------- Gradual rotation  --------------- */
 	for (int i = 0; i < (10 * MaxValue); i++)
 	{
-		headToPosition (posXrotate, posYrotate, flying_height, posYawbegin + (ANGOLAR_ROTATION * i)*0.1f);
+		headToPosition (posXrotate, posYrotate, flying_height, posYawbegin + (ANGULAR_ROTATION * i)*0.1f);
 		vTaskDelay(50);
 	}
 
-	/* --------------- Angolar correction  --------------- */
+	/* --------------- Angular correction  --------------- */
 	for (int i = 0; i < 20; i++)
 	{
-		headToPosition (posXrotate, posYrotate, flying_height, posYawbegin + (ANGOLAR_ROTATION * MaxValue));
+		headToPosition (posXrotate, posYrotate, flying_height, posYawbegin + (ANGULAR_ROTATION * MaxValue));
 		vTaskDelay(50);
 	}
 	
