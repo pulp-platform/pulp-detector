@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------
- Copyright (C) 2021-2022 University of Bologna, Italy. 
+ Copyright (C) 2023 University of Bologna, Italy. 
  All rights reserved.                                                           
                                                                                
 Thesis based on autonomous driving of drones able to map an unknown
