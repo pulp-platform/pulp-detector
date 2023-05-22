@@ -1,12 +1,13 @@
 # PULP-Detector
 
-Authors:*Lorenzo Lamberti* <lorenzo.lamberti@unibo.it>
-        *Luca Bompani* <luca.bompani5@unibo.it>
-        *Manuele Rusci* <manuele.rusci@kuleuven.be>
-        *Daniele Palossi* <dpalossi@iis.ee.ethz.ch>
+Authors: *Lorenzo Lamberti*, *Luca Bompani*, *Manuele Rusci*, *Daniele Palossi* 
+
+Emails: <lorenzo.lamberti@unibo.it>  <luca.bompani5@unibo.it>  <manuele.rusci@kuleuven.be>  <dpalossi@iis.ee.ethz.ch>
+
 Copyright (C) 2023 ***University of Bologna, KU Leuven, ETH Zürich,***. All rights reserved.
 
 <img style="float: left;" src="images/cover.png" width="100%">
+
 
 ### **Videos** 
 - **Exploration and Detection**: [Demo](https://youtu.be/BTin8g0nyko) 
@@ -61,7 +62,7 @@ We release here, as open source, all our code, hardware designs, datasets, and t
 
 
 
-## REFS
+## PULP-Platforms refs
 
 [PULP Platform Youtube](https://www.youtube.com/c/PULPPlatform) channel (subscribe it!)
 
