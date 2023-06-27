@@ -1,8 +1,7 @@
 # PULP-Detector
 
-Authors: *Lorenzo Lamberti*, *Luca Bompani*, *Manuele Rusci*, *Daniele Palossi* 
-
-Emails: <lorenzo.lamberti@unibo.it>,  <luca.bompani5@unibo.it>,  <manuele.rusci@kuleuven.be>,  <dpalossi@iis.ee.ethz.ch>
+Authors: *Lorenzo Lamberti*, *Luca Bompani*, *Victor Javier Kartsch*, *Manuele Rusci*, *Daniele Palossi*, *Luca Benini*.
+Emails: <lorenzo.lamberti@unibo.it>,  <luca.bompani5@unibo.it>,  
 
 Copyright (C) 2023 ***University of Bologna***. All rights reserved.
 
