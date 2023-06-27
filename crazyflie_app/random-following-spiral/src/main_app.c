@@ -17,8 +17,8 @@
 
  File:   	main_app.c
  Authors:
-	  		Lorenzo Lamberti 	<lorenzo.lamberti@unibo.it>
-         	Luca Bompani  		<luca.bompani5@unibo.it>
+			Lorenzo Lamberti 	<lorenzo.lamberti@unibo.it>
+			Luca Bompani  		<luca.bompani5@unibo.it>
 			Manuele Rusci 		<manuele.rusci@kuleuven.be>
 			Daniele Palossi 	<dpalossi@ethz.ch> <daniele.palossi@supsi.ch>                   
  Date:   	01.04.2023                                                          
