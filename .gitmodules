@@ -4,3 +4,6 @@
 [submodule "crazyflie_app/crazyflie-firmware-modified"]
 	path = crazyflie_app/crazyflie-firmware-modified
 	url = git@github.com:LorenzoLamberti94/crazyflie-firmware-modified.git
+[submodule "viewer-pulp-detector"]
+	path = viewer-pulp-detector
+	url = git@github.com:LorenzoLamberti94/viewer-pulp-detector.git
