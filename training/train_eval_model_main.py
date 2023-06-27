@@ -18,11 +18,11 @@
 # limitations under the License.
 # ==============================================================================
 
-# Modified by:                                                                  
+# Modified by:
 # 		    Lorenzo Lamberti 	<lorenzo.lamberti@unibo.it>
 #         	Luca Bompani  		<luca.bompani5@unibo.it>
-# Date:   	01.04.2023                                                         
-  
+# Date:   	01.04.2023
+
 
 """Binary to run train and evaluation on object detection model."""
 
@@ -108,7 +108,7 @@ def main(unused_argv):
                          steps=None,
                          checkpoint_path=tf.train.latest_checkpoint(
                              FLAGS.checkpoint_dir))
-      
+
       # params = estimator.get_variable_names()
       # for p in params:
       #     print(p, estimator.get_variable_value(p).shape)

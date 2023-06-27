@@ -42,11 +42,11 @@
 
 #-------------------------------------------------------------------------------#
 # Modified by:                                                                  #
-#	  		Lorenzo Lamberti 	<lorenzo.lamberti@unibo.it>						#
-#         	Luca Bompani  		<luca.bompani5@unibo.it>						#
-# Date:   	01.04.2023                                                          #
+#           Lorenzo Lamberti    <lorenzo.lamberti@unibo.it>                     #
+#           Luca Bompani        <luca.bompani5@unibo.it>                        #
+# Date:     01.04.2023                                                          #
 #-------------------------------------------------------------------------------#
-   
+
 # notes:
 # QVGA  format 320x240 px = 76800
 # QQVGA format 160x120 px = 19200
@@ -64,9 +64,9 @@ from PIL import Image,ImageDraw
 
 #save image and visualize
 import numpy as np
-import cv2 
+import cv2
 import binascii
-import io 
+import io
 
 VERBOSE=False
 RECEIVE_TIMESTAMP=False #only used for the dataset framework collector
@@ -85,23 +85,23 @@ def decode_bytes(byte_arr):
     Returns:
         tuple[lists]: [0] list of y_min,x_min,y_max,x_max,class of bounding boxes, list of scores associated with each bounding boxes
     """
-	try:
-		cordinates=[struct.unpack('h',byte_arr[i*2:(i+1)*2])[0] for i in range(0,40)]
-		# print(cordinates)
-		scores=[i for i in struct.iter_unpack('b', byte_arr[80:90])]
-		# print(scores)
-		classes=[i for i in struct.iter_unpack('b', byte_arr[90:100])]
-		seen_boxes=[tuple(cordinates[idx*4:(idx+1)*4])+classes[idx] for idx,i in enumerate(scores) if (scores[idx][0]>=SCORE_THR)]
-	except:
-		seen_boxes,scores=[],[]
-    
+    try:
+        cordinates=[struct.unpack('h',byte_arr[i*2:(i+1)*2])[0] for i in range(0,40)]
+        # print(cordinates)
+        scores=[i for i in struct.iter_unpack('b', byte_arr[80:90])]
+        # print(scores)
+        classes=[i for i in struct.iter_unpack('b', byte_arr[90:100])]
+        seen_boxes=[tuple(cordinates[idx*4:(idx+1)*4])+classes[idx] for idx,i in enumerate(scores) if (scores[idx][0]>=SCORE_THR)]
+    except:
+        seen_boxes,scores=[],[]
+
     return seen_boxes,scores
 
 def save_image_bytearray(imgdata, number_of_images):
     """saving bytearray data as images
 
     Args:
-        imgdata (bytearray): bytearay of images data 
+        imgdata (bytearray): bytearay of images data
         number_of_images (int): number of images in imagedata
     """
     decoded = cv2.imdecode(np.frombuffer(imgdata, np.uint8), -1)
@@ -139,7 +139,7 @@ class ImgThread(threading.Thread):
 
         if SAVE_IMAGES: # create directory to save images
             os.makedirs(images_folder_path, exist_ok=True)
-	
+
         while(1):
             strng = client_socket.recv(512)
             if VERBOSE: print("\nsize of packet received:", len(strng), "\n")
@@ -156,10 +156,10 @@ class ImgThread(threading.Thread):
                 if(starting_point>=0):
                        imgtext=imgdata[starting_point:starting_point+102]
                        imgdata=imgdata[:starting_point]+imgdata[starting_point+102:]
-                       
+
                 #put in another variable the complete image
                 imgdata_complete = imgdata
-				
+
                 #start the acquisition of the new image
                 imgdata = strng[start_idx:]
 
@@ -167,15 +167,15 @@ class ImgThread(threading.Thread):
                 end_idx = imgdata_complete.find(b"\xff\xd9")
                 if end_idx >= 0 and imgdata_complete:
                     imgdata_complete = imgdata_complete[0:end_idx] + imgdata_complete[end_idx+2:]
-                
+
                 if RECEIVE_TIMESTAMP: # remove last 8 bytes, which are just timestamp
                     timestamp = imgdata_complete[-8:]
                     imgdata_complete = imgdata_complete[:-8]
 
                 # Now append the jpeg footer at the end of the complete image. We do this before saving or visualizing the image, so it can be decoded correctly
-                imgdata_complete = imgdata_complete + (b"\xff\xd9") 
+                imgdata_complete = imgdata_complete + (b"\xff\xd9")
                 if VERBOSE: print('len strng %d  \t Bytes imgdata  %d\t \n\n' % (len(strng), len(imgdata_complete)-308 )) #308 = len(header)+len(footer)
-                
+
                 # if SAVE_IMAGES==True and (number_of_images % 1 ==0 ): #saves just one every 5 images to not overload
                 #     save_image_bytearray(imgdata_complete, number_of_images)
                 number_of_images+=1
@@ -186,19 +186,19 @@ class ImgThread(threading.Thread):
                        boxes=[]
                        scores=[]
                     self._callback(imgdata_complete, number_of_images, boxes,scores)
-                    
+
                 except gi.repository.GLib.Error:
                     print ("image not shown")
-                    pass 
- 
+                    pass
+
             else: # Continue receiving the image
                 if imgdata==None:
                     imgdata=strng
                 else:
                     imgdata += strng
-            
 
-          
+
+
 # UI for showing frames from AI-deck example
 class FrameViewer(Gtk.Window):
 
@@ -209,7 +209,7 @@ class FrameViewer(Gtk.Window):
         self._start = None
         self.set_default_size(374, 294)
 
-    def init_ui(self):            
+    def init_ui(self):
         self.override_background_color(Gtk.StateType.NORMAL, Gdk.RGBA(0, 0, 0, 1))
         self.set_border_width(20)
         self.set_title("Connecting...")
@@ -226,7 +226,7 @@ class FrameViewer(Gtk.Window):
         #print(touple)
         self.frame.set_from_pixbuf(pix)
 
-			
+
 
     def _showframe(self, imgdata_complete, im_name, seen_boxes,scores):
         # Add FPS/img size to window title
@@ -242,7 +242,7 @@ class FrameViewer(Gtk.Window):
             if(begin!=-1):
                 #print(len(imgdata_complete))
                 buffer=np.frombuffer(imgdata_complete[begin:], np.uint8)
-				
+
                 decoded=cv2.imdecode(buffer, -1)
                 img_decoded= np.array(decoded,dtype=np.uint8)
                 im=Image.fromarray(img_decoded)
@@ -269,7 +269,7 @@ class FrameViewer(Gtk.Window):
             #print(pix)
             #if(pix!=None):
             GLib.idle_add(self._update_image,pix)
-            
+
         except gi.repository.GLib.Error:
             print("Could not set image!")
         img_loader.close()

@@ -13,11 +13,11 @@ def roll(image, delta):
     xsize, ysize = image.size
 
     delta = int(delta*xsize)
-  
+
     delta = delta % xsize
     if delta == 0: return image
 
-    new_im = Image.new("RGB", (xsize, ysize))		 
+    new_im = Image.new("RGB", (xsize, ysize))
     part2 = image.crop((delta, 0, xsize, ysize))
     new_im.paste(part2, (0, 0, xsize-delta, ysize))
     #part1 = image.crop((0, 0, delta, ysize))		#if you want to paste the cut part on the right instead of black pixels
@@ -70,7 +70,7 @@ for image in os.listdir("images"):				#directory where images to augment are sav
     f = os.path.join("images", image)
     # checking if it is a file
     if os.path.isfile(f):
-      for i in range(5): 
+      for i in range(5):
         im = Image.open(os.path.join("images", image))
         im2 = roll(im, (i+1)*0.02)
         im2.save("images/" + str(i) + image)

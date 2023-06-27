@@ -22,11 +22,11 @@
  * You should have received a copy of the GNU General Public License
  * along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
  */
- 
-/*  Modified by:                                                                  
-			    Lorenzo Lamberti 	<lorenzo.lamberti@unibo.it>
-    Date:   	01.04.2023                                                         
-*/  
+
+/*  Modified by:
+                Lorenzo Lamberti    <lorenzo.lamberti@unibo.it>
+    Date:       01.04.2023
+*/
 
 /* multiranger.c: Multiranger deck driver */
 #include "deck.h"
@@ -72,14 +72,14 @@ NO_DMA_CCM_SAFE_ZERO_INIT static VL53L1_Dev_t devRight;
 #define RANGE_MODE VL53L1_DISTANCEMODE_LONG         // Maximum distance: up to 4m       -    Benefit: Maximum distance
 
 /* --- Preset mode --- */
-#define PRESET_MODE VL53L1_PRESETMODE_LITE_RANGING 
+#define PRESET_MODE VL53L1_PRESETMODE_LITE_RANGING
 
-/** --- Timing budget --- 
+/** --- Timing budget ---
  * Timing budget is the time required by the sensor to perform one range measurement.
- * The minimum and maximum timing budgets are [20 ms, 1000 ms] 
+ * The minimum and maximum timing budgets are [20 ms, 1000 ms]
  */
 #define TIMING_BUDGET_US 50000 // [us]      (example: 50000=50ms)
-/** --- Sensor status --- 
+/** --- Sensor status ---
  * The driver uses two parameters to qualify the ranging measurement: signal and sigma.
  * If signal or sigma are outside the limits, the ranging is flagged as invalid (note that RangeStatus is different than zero).
  *      1. Sigma: VL53L1X_CHECKENABLE_SIGMA_FINAL_RANGE
@@ -98,11 +98,11 @@ struct{
 }range_value;
 
 struct{
-	uint8_t front;
-	uint8_t back;
-	uint8_t up;
-	uint8_t right;
-	uint8_t left;
+    uint8_t front;
+    uint8_t back;
+    uint8_t up;
+    uint8_t right;
+    uint8_t left;
 }range_states;
 
 static bool mrInitSensor(VL53L1_Dev_t *pdev, uint32_t pca95pin, char *name)
@@ -128,30 +128,30 @@ static bool mrInitSensor(VL53L1_Dev_t *pdev, uint32_t pca95pin, char *name)
         VL53L1_PresetModes presetMode;
         VL53L1_GetPresetMode(&devFront, &presetMode);
         switch(presetMode){
-			case VL53L1_PRESETMODE_AUTONOMOUS:
-				DEBUG_PRINT("[%s] Preset mode: Autonomous\n", name);
-				break;
-			case VL53L1_PRESETMODE_LITE_RANGING:
-				DEBUG_PRINT("[%s] Preset mode: Lite ranging\n", name);
-				break;
-			case VL53L1_PRESETMODE_LOWPOWER_AUTONOMOUS:
-				DEBUG_PRINT("[%s] Preset mode: Low power autonomous\n", name);
-				break;
+            case VL53L1_PRESETMODE_AUTONOMOUS:
+                DEBUG_PRINT("[%s] Preset mode: Autonomous\n", name);
+                break;
+            case VL53L1_PRESETMODE_LITE_RANGING:
+                DEBUG_PRINT("[%s] Preset mode: Lite ranging\n", name);
+                break;
+            case VL53L1_PRESETMODE_LOWPOWER_AUTONOMOUS:
+                DEBUG_PRINT("[%s] Preset mode: Low power autonomous\n", name);
+                break;
         }
         /* --- Print Distance mode --- */
         VL53L1_DistanceModes distanceMode;
         VL53L1_GetDistanceMode(&pdev, &distanceMode);
         switch(presetMode){
-			case VL53L1_DISTANCEMODE_SHORT:
-				DEBUG_PRINT("[%s] Distance mode: Short\n", name);
-				break;
-			case VL53L1_DISTANCEMODE_MEDIUM:
-				DEBUG_PRINT("[%s] Distance mode: Medium\n", name);
-				break;
-			case VL53L1_DISTANCEMODE_LONG:
-				DEBUG_PRINT("[%s] Distance mode: Long\n", name);
-				break;
-		}
+            case VL53L1_DISTANCEMODE_SHORT:
+                DEBUG_PRINT("[%s] Distance mode: Short\n", name);
+                break;
+            case VL53L1_DISTANCEMODE_MEDIUM:
+                DEBUG_PRINT("[%s] Distance mode: Medium\n", name);
+                break;
+            case VL53L1_DISTANCEMODE_LONG:
+                DEBUG_PRINT("[%s] Distance mode: Long\n", name);
+                break;
+        }
         /* --- Print Timing Budget  --- */
         uint32_t measurementTimingBudgetMicroSeconds;
         VL53L1_GetMeasurementTimingBudgetMicroSeconds(&pdev, &measurementTimingBudgetMicroSeconds);
@@ -165,7 +165,7 @@ static bool mrInitSensor(VL53L1_Dev_t *pdev, uint32_t pca95pin, char *name)
         VL53L1_GetLimitCheckValue(&pdev, VL53L1_CHECKENABLE_SIGMA_FINAL_RANGE, &limitCheckValue);
         DEBUG_PRINT("[%s] Sigma final range: %f\n", name, limitCheckValue / ((float) (1<<16)));
         VL53L1_GetLimitCheckValue(&pdev, VL53L1_CHECKENABLE_SIGNAL_RATE_FINAL_RANGE, &limitCheckValue);
-		DEBUG_PRINT("[%s] Signal rate final range: %f\n", name, limitCheckValue/ ((float) (1<<16)));
+        DEBUG_PRINT("[%s] Signal rate final range: %f\n", name, limitCheckValue/ ((float) (1<<16)));
   }
   return status;
 }
@@ -175,7 +175,7 @@ static uint16_t mrGetMeasurementAndRestart(VL53L1_Dev_t *dev, uint8_t *range_sta
     VL53L1_Error status = VL53L1_ERROR_NONE;
     VL53L1_RangingMeasurementData_t rangingData;
 
-	status = VL53L1_WaitMeasurementDataReady(dev);
+    status = VL53L1_WaitMeasurementDataReady(dev);
     status = VL53L1_GetRangingMeasurementData(dev, &rangingData);
     status = VL53L1_ClearInterruptAndStartMeasurement(dev);
     status = status;
@@ -197,19 +197,19 @@ static void mrTask(void *param)
 
     status = VL53L1_SetPresetMode(&devBack, PRESET_MODE);
     status = VL53L1_SetDistanceMode(&devBack, RANGE_MODE);
-	status = VL53L1_SetMeasurementTimingBudgetMicroSeconds(&devBack, TIMING_BUDGET_US);
+    status = VL53L1_SetMeasurementTimingBudgetMicroSeconds(&devBack, TIMING_BUDGET_US);
 
-	status = VL53L1_SetPresetMode(&devUp, PRESET_MODE);
-	status = VL53L1_SetDistanceMode(&devUp, RANGE_MODE);
-	status = VL53L1_SetMeasurementTimingBudgetMicroSeconds(&devUp, TIMING_BUDGET_US);
+    status = VL53L1_SetPresetMode(&devUp, PRESET_MODE);
+    status = VL53L1_SetDistanceMode(&devUp, RANGE_MODE);
+    status = VL53L1_SetMeasurementTimingBudgetMicroSeconds(&devUp, TIMING_BUDGET_US);
 
-	status = VL53L1_SetPresetMode(&devLeft, PRESET_MODE);
-	status = VL53L1_SetDistanceMode(&devLeft, RANGE_MODE);
-	status = VL53L1_SetMeasurementTimingBudgetMicroSeconds(&devLeft, TIMING_BUDGET_US);
+    status = VL53L1_SetPresetMode(&devLeft, PRESET_MODE);
+    status = VL53L1_SetDistanceMode(&devLeft, RANGE_MODE);
+    status = VL53L1_SetMeasurementTimingBudgetMicroSeconds(&devLeft, TIMING_BUDGET_US);
 
-	status = VL53L1_SetPresetMode(&devRight, PRESET_MODE);
-	status = VL53L1_SetDistanceMode(&devRight, RANGE_MODE);
-	status = VL53L1_SetMeasurementTimingBudgetMicroSeconds(&devRight, TIMING_BUDGET_US);
+    status = VL53L1_SetPresetMode(&devRight, PRESET_MODE);
+    status = VL53L1_SetDistanceMode(&devRight, RANGE_MODE);
+    status = VL53L1_SetMeasurementTimingBudgetMicroSeconds(&devRight, TIMING_BUDGET_US);
 
 
     // Restart all sensors
