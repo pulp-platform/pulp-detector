@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------
- Copyright (C) 2023 University of Bologna, Italy.
+     Copyright (C) 2023 University of Bologna, Italy, ETH Zürich, Switzerland.
  All rights reserved.
 
  Licensed under the Apache License, Version 2.0 (the "License");
