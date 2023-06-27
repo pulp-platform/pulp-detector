@@ -31,9 +31,12 @@ and run the application on the drone.
 
 ## VISUALIZATION
 
-To  visualize the detections being performed by the drone you need first to connect to the Bitcraze AI-deck example wi-fi network.The script requires the gi package which can be installed following this [GUIDE](https://pygobject.readthedocs.io/en/latest/getting_started.html#ubuntu-getting-started)
+To  visualize the detections being performed by the drone you need first to connect to the Bitcraze AI-deck example wi-fi network.
+
+The script requires the gi package which can be installed following this [GUIDE](https://pygobject.readthedocs.io/en/latest/getting_started.html#ubuntu-getting-started)
+
  Then you need to run the viewer_custom.py with :
-```python viewer_custom ```
+```python viewer_custom.py ```
 
 
 
