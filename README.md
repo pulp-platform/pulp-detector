@@ -22,13 +22,15 @@ Publications:
 
 
 ~~~~
-@misc{pulp-detector,
-      title={Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones}, 
-      author={Lorenzo Lamberti and Luca Bompani and Victor Javier Kartsch and Manuele Rusci and Daniele Palossi and Luca Benini},
-      year={2023},
-      eprint={2301.12175},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO}
+@INPROCEEDINGS{10137154,
+  author={Lamberti, Lorenzo and Bompani, Luca and Kartsch, Victor Javier and Rusci, Manuele and Palossi, Daniele and Benini, Luca},
+  booktitle={2023 Design, Automation & Test in Europe Conference & Exhibition (DATE)}, 
+  title={Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-6},
+  doi={10.23919/DATE56975.2023.10137154}
 }
 ~~~~
 
