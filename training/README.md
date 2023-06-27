@@ -6,7 +6,7 @@ in this repo there are the training, evaluation and deployment scripts used for 
 
 ## Setup
 
-To use this repo you will need to setup the python environment needed which can be done using the tensorflow1_15.yml file 
+To use this repo you will need to setup the python environment needed which can be done using the tensorflow1_15.yml file
 > conda env create -f tensorflow1_15.yml
 
 ~~ ~~
@@ -14,11 +14,11 @@ To use this repo you will need to setup the python environment needed which can 
 
 Take a look at [Official TensorFlow Object Detection API Tutorial](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/index.html) to set up the environment and to have more insights.
 
-Look also to the git repo [README](https://github.com/tensorflow/models/tree/master/research/object_detection) file to have more examples and tutorials. 
+Look also to the git repo [README](https://github.com/tensorflow/models/tree/master/research/object_detection) file to have more examples and tutorials.
 
 
 ### OpenImagesV4 Dataset
-Open Images is a dataset of ~9M images annotated with image-level labels, object bounding boxes, object segmentation masks, visual relationships, and localized narratives. It contains a total of 16M bounding boxes for 600 object classes on 1.9M images, making it the largest existing dataset with object location annotations. 
+Open Images is a dataset of ~9M images annotated with image-level labels, object bounding boxes, object segmentation masks, visual relationships, and localized narratives. It contains a total of 16M bounding boxes for 600 object classes on 1.9M images, making it the largest existing dataset with object location annotations.
 
 ### Download a subset of OpenImagesV4 Dataset
 
@@ -29,12 +29,12 @@ Example of a command for executing OIDv4_ToolKit
 `python3 main.py downloader --classes classes.txt --type_csv all`
 
 > **--classes** : you specify what classes you want to download (write the corresponding label). if the class name has a space in it , like "polar bear", you must write it with **underscores** "polar_bear". To download multiple classes, you can create a classes.txt file (and give this to the --classes opt) in which each line corresponds to a class name.
-> 
+>
 >**--type_cvs** : you can select "train", "test", "validation", "all". Selecting "all" you will download 3 folders with images divided into train, valid and test sets (so you are downloading all the images available for your class)
 
-we provide a simple data augmentation utility which attach a black stip of varing length to the rightmost side of an image 
+we provide a simple data augmentation utility which attach a black stip of varing length to the rightmost side of an image
 
- 
+
 
 
 ### TFRecord generation
@@ -46,7 +46,7 @@ There is a [GitHub Repo](https://github.com/zamblauskas/oidv4-toolkit-tfrecord-g
 **IMPORTANT:** Here the classes.txt file doesn't want underscores instead of white spaces!!! (unlike the dataset downloader OIDv4ToolKit!)
 For example, you have to write again "polar bear" instead of "polar_bear".
 
-### Label Map 
+### Label Map
 
 TensorFlow requires a label map, which namely maps each of the used labels to an integer values. This label map is used both by the training and detection processes.
 
@@ -56,13 +56,13 @@ The classes included in the label map should be exactly the ones that you are tr
 
 ### Configuration
 
-How to setup the training/config_file.config file. 
+How to setup the training/config_file.config file.
 
-You can find all the default config files in `models/research/object_detection/samples/configs` folder. Make sure to set correctly all the paths (search for "PATH_TO_BE_CONFIGURED" to find the fields). 
+You can find all the default config files in `models/research/object_detection/samples/configs` folder. Make sure to set correctly all the paths (search for "PATH_TO_BE_CONFIGURED" to find the fields).
 
 More details on the essential fields to set can be found [here](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html#configuring-a-training-pipeline) and at the "Useful stuff" paragraph.
 
-we provide the configurations files for both quantization aware training and normal training. 
+we provide the configurations files for both quantization aware training and normal training.
 
 
 ### Metrics
@@ -85,7 +85,7 @@ Example training command:
 > **--model_dir** : where checkpoints ad tensorboard logs will be saved
 
 
-### Testing 
+### Testing
 Use the `train_eval_model_main.py` script to test your model.
 
 Example testion command:
@@ -94,10 +94,10 @@ Example testion command:
 > **--checkpoint_dir** : directory where the checkpoints have been saved by default it uses the last.
 
 
-### FROZEN GRAPH EXPORT 
+### FROZEN GRAPH EXPORT
 
 The checkpoints produced by the training of the neural network requires to be exported in a format that can  be converted in  tflite for later deployment. First of all you'll need to use the export_tflite_ssd_graph.py python script which you can find in the training directory . An example
-`python export_tflite_ssd_graph.py --trained_checkpoint_prefix ./model.ckpt-### --output_directory ./ --pipeline_config_path ./configs/ssd_mobilenet_v2_oid_v4_copy.config`
+`python export_tflite_ssd_graph.py --trained_checkpoint_prefix ./model.ckpt-### --output_directory ./ --pipeline_config_path ./configs/ssd_mobilenet_v2_oid_v4.config`
 
 
 it exports a file called tflite_graph.pb in the directory indicated (the current one)
