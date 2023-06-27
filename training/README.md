@@ -97,7 +97,7 @@ Example testion command:
 ### FROZEN GRAPH EXPORT 
 
 The checkpoints produced by the training of the neural network requires to be exported in a format that can  be converted in  tflite for later deployment. First of all you'll need to use the export_tflite_ssd_graph.py python script which you can find in the training directory . An example
-`python export_tflite_ssd_graph.py --trained_checkpoint_prefix ./model.ckpt-### --output_directory ./ --pipeline_config_path /home/bomps/Scrivania/gap_8/date_paper/faulty_non_symmetric/finetuning_deployment/configs/ssd_mobilenet_v2_oid_v4_copy.config`
+`python export_tflite_ssd_graph.py --trained_checkpoint_prefix ./model.ckpt-### --output_directory ./ --pipeline_config_path ./configs/ssd_mobilenet_v2_oid_v4_copy.config`
 
 
 it exports a file called tflite_graph.pb in the directory indicated (the current one)
