@@ -30,8 +30,8 @@
 
 
 
-#include "/home/bomps/Scrivania/gap_8/gap_sdk/frame_streamer/include/tools/frame_streamer.h"
-#include "/home/bomps/Scrivania/gap_8/gap_sdk/frame_streamer/frame_streamer/frame_streamer.c"
+#include "/PATH/TO/THE/SDK/gap_sdk/frame_streamer/include/tools/frame_streamer.h"
+#include "/PATH/TO/THE/SDK/gap_sdk/frame_streamer/frame_streamer/frame_streamer.c"
 //needed as the gap_sdk is missing the compiled versions. 
 #include "SSD_tin_can_bottle.h"
 #include "SSD_tin_can_bottleKernels.h"
@@ -343,7 +343,7 @@ static void camera_handler() {
 	#endif
 	pi_camera_control(&camera, PI_CAMERA_CMD_START, 0);
 	#else
-	ReadImageFromFile("/home/bomps/Scrivania/gap_8/conversion_tflite/converted_1_output/bottle_3_29.ppm", AT_INPUT_WIDTH_SSD, AT_INPUT_HEIGHT_SSD, 1, Input_1, AT_INPUT_WIDTH_SSD*AT_INPUT_HEIGHT_SSD*sizeof(char), IMGIO_OUTPUT_CHAR, 0);
+	ReadImageFromFile("../gap_8/conversion_tflite/converted_1_output/bottle_3_29.ppm", AT_INPUT_WIDTH_SSD, AT_INPUT_HEIGHT_SSD, 1, Input_1, AT_INPUT_WIDTH_SSD*AT_INPUT_HEIGHT_SSD*sizeof(char), IMGIO_OUTPUT_CHAR, 0);
 	
 	pi_task_push(pi_task_callback(&detection_task, detection_handler, NULL));
 	#endif
