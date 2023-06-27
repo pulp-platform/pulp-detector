@@ -15,7 +15,7 @@
  See the License for the specific language governing permissions and           
  limitations under the License.                                                
 
- File:   	main_app.h
+ File:   	main_app.c
  Authors:
 	  		Lorenzo Lamberti 	<lorenzo.lamberti@unibo.it>
          	Luca Bompani  		<luca.bompani5@unibo.it>
