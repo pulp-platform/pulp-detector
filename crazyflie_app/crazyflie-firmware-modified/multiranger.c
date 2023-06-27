@@ -22,6 +22,12 @@
  * You should have received a copy of the GNU General Public License
  * along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
  */
+ 
+/*  Modified by:                                                                  
+			    Lorenzo Lamberti 	<lorenzo.lamberti@unibo.it>					         	Luca Bompani  		<luca.bompani5@unibo.it>						#
+    Date:   	01.04.2023                                                         
+*/  
+
 /* multiranger.c: Multiranger deck driver */
 #include "deck.h"
 #include "param.h"
