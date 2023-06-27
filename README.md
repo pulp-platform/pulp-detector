@@ -18,7 +18,7 @@ Copyright (C) 2023 ***University of Bologna***. All rights reserved.
 If you use **PULP-Detector** in an academic or industrial context, please cite the following publications:
 
 Publications: 
-* *Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones* ([arXiv preprint](https://arxiv.org/abs/2301.12175) - [DATE conference](???))
+* *Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones* ([arXiv preprint](https://arxiv.org/abs/2301.12175) - [DATE conference](https://ieeexplore.ieee.org/abstract/document/10137154))
 
 
 ~~~~
