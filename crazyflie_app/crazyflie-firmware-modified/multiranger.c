@@ -24,7 +24,7 @@
  */
  
 /*  Modified by:                                                                  
-			    Lorenzo Lamberti 	<lorenzo.lamberti@unibo.it>					         	Luca Bompani  		<luca.bompani5@unibo.it>						#
+			    Lorenzo Lamberti 	<lorenzo.lamberti@unibo.it>
     Date:   	01.04.2023                                                         
 */  
 
