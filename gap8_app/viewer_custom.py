@@ -40,6 +40,13 @@
 #  JPEG image is taken from the stream using the JPEG start-of-frame (0xFF 0xD8)
 #  and the end-of-frame (0xFF 0xD9).
 
+#-------------------------------------------------------------------------------#
+# Modified by:                                                                  #
+#	  		Lorenzo Lamberti 	<lorenzo.lamberti@unibo.it>						#
+#         	Luca Bompani  		<luca.bompani5@unibo.it>						#
+# Date:   	01.04.2023                                                          #
+#-------------------------------------------------------------------------------#
+   
 # notes:
 # QVGA  format 320x240 px = 76800
 # QQVGA format 160x120 px = 19200
