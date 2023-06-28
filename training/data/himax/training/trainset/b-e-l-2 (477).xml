@@ -1,7 +1,7 @@
 <annotation>
 	<folder>grandi_x_ft</folder>
 	<filename>b-e-l-2 (477).jpg</filename>
-	<path>/home/aurora/auro-windows/Desktop/tesi_utilities/dataset/26-08/bassa-confidenza/grandi_x_ft/b-e-l-2 (477).jpg</path>
+	<path>./training/data/himax/testing/testset/b-e-l-2 (477).jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>

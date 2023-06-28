@@ -1,7 +1,7 @@
 <annotation>
 	<folder>buone_1</folder>
 	<filename>tincan_1_17.jpg</filename>
-	<path>/home/aurora/auro-windows/Desktop/tesi_utilities/dataset/tin_can/buone_1/tincan_1_17.jpg</path>
+	<path>./training/data/himax/testing/testset/tincan_1_17.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>

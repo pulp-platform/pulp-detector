@@ -1,7 +1,7 @@
 <annotation>
 	<folder>buone_1</folder>
 	<filename>bottle_1(1).jpg</filename>
-	<path>/home/aurora/auro-windows/Desktop/tesi_utilities/dataset/bottle/buone_1/bottle_1(1).jpg</path>
+	<path>./training/data/himax/testing/testset/bottle_1(1).jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
