@@ -111,5 +111,5 @@ The external modules under:
   * `viewer-pulp-detector/`
   * `pulp-detector/crazyflie_app/crazyflie-firmware`
   * `pulp-detector/crazyflie_app/crazyflie-firmware-modified`
-  * 
+    
 Are from [Bitcraze](https://github.com/bitcraze), released under a GPL-3.0 license.
