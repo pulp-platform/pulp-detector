@@ -15,4 +15,4 @@ We provide also the TF Record files needed for the Tensorflow training: `mytests
 
 
 ## License
-We release this dataset as open source under Apache-2.0 License
+We release this dataset as open source under Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License, see LICENSE.CC.md
