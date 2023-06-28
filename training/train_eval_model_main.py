@@ -1,7 +1,3 @@
-# Example commands:
-# training:   CUDA_VISIBLE_DEVICES=1 python train_eval_model_main.py --model_dir=./training/ --pipeline_config_path=configs/ssd_mobilenet_v2_oid_v4.config --alsologtostderr
-# evaluation: CUDA_VISIBLE_DEVICES=1 python train_eval_model_main.py --pipeline_config_path=configs/ssd_mobilenet_v2_oid_v4.config --checkpoint_dir=./trained-inference-graphs/output_inference_graph_320x240.pb --run_once
-
 # ==============================================================================
 # Copyright 2017 The TensorFlow Authors. All Rights Reserved.
 #
@@ -23,6 +19,9 @@
 #         	Luca Bompani  		<luca.bompani5@unibo.it>
 # Date:   	01.04.2023
 
+# Example commands:
+# training:   CUDA_VISIBLE_DEVICES=1 python train_eval_model_main.py --model_dir=./training/ --pipeline_config_path=configs/ssd_mobilenet_v2_oid_v4.config --alsologtostderr
+# evaluation: CUDA_VISIBLE_DEVICES=1 python train_eval_model_main.py --pipeline_config_path=configs/ssd_mobilenet_v2_oid_v4.config --checkpoint_dir=./trained-inference-graphs/output_inference_graph_320x240.pb --run_once
 
 """Binary to run train and evaluation on object detection model."""
 
