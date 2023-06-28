@@ -87,6 +87,7 @@ All files under:
   * `crazyflie_app/random-following-spiral`
   * `crazyflie_app/rotate`
   * `gap8_app/SSD_tin_can_bottle.c`
+  * `dataset/`
 are original and licensed under Apache-2.0, see [LICENSE.Apache.md](LICENSE.Apache.md).
 
 All files under:
