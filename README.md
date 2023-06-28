@@ -8,23 +8,23 @@ Copyright (C) 2023 ***University of Bologna***, ***ETH Zürich***. All rights re
 <img style="float: left;" src="images/cover.png" width="100%">
 
 
-### **Videos** 
+### **Videos**
 
-**Exploration and Detection Demo**: [YouTube](https://youtu.be/BTin8g0nyko) 
+**Exploration and Detection Demo**: [YouTube](https://youtu.be/BTin8g0nyko)
 
 ### **Citing**
 
 If you use **PULP-Detector** in an academic or industrial context, please cite the following publications:
 
-Publications: 
+Publications:
 * *Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones* ([arXiv preprint](https://arxiv.org/abs/2301.12175) - [DATE conference](https://ieeexplore.ieee.org/abstract/document/10137154))
 
 
 ~~~~
 @INPROCEEDINGS{10137154,
   author={Lamberti, Lorenzo and Bompani, Luca and Kartsch, Victor Javier and Rusci, Manuele and Palossi, Daniele and Benini, Luca},
-  booktitle={2023 Design, Automation & Test in Europe Conference & Exhibition (DATE)}, 
-  title={Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones}, 
+  booktitle={2023 Design, Automation & Test in Europe Conference & Exhibition (DATE)},
+  title={Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones},
   year={2023},
   volume={},
   number={},
@@ -80,4 +80,28 @@ git clone git@github.com:pulp-platform/pulp-detector.git --recursive
 
 
 
- 
+
+## License
+
+All files under:
+  * `crazyflie_app/random-following-spiral`
+  * `crazyflie_app/rotate`
+  * `gap8_app/SSD_tin_can_bottle.c`
+are original and licensed under Apache-2.0, see [LICENSE.Apache.md](LICENSE.Apache.md).
+
+All files under:
+  * `training/`
+Are from [Tensorflow](https://github.com/tensorflow/models/), released under  Apache-2.0 License, see [LICENSE.Apache.md](LICENSE.Apache.md).
+
+
+All files under:
+  * `pulp-detector/gap8_app`
+
+Are from [GreenWaves Technologies](https://github.com/GreenWaves-Technologies), released under a BSD License, see [LICENSE.BSD.md](LICENSE.BSD.md)
+
+
+The external modules under:
+  * `viewer-pulp-detector/`
+  * `pulp-detector/crazyflie_app/crazyflie-firmware`
+  * `pulp-detector/crazyflie_app/crazyflie-firmware-modified`
+Are from [Bitcraze](https://github.com/bitcraze), released under a GPL-3.0 license.
