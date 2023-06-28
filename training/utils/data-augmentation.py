@@ -1,6 +1,32 @@
-#this script generate 5 new images for each image of the tin can's training set (of Open Images) by translating each image of a percentage of its lenght (2%, 4%, 6%, 8%, 10%)
+#-------------------------------------------------------------------------------#
+# Copyright (C) 2023 University of Bologna, Italy, ETH Zürich, Switzerland.     #
+# All rights reserved.                                                          #
+#                                                                               #
+# Licensed under the Apache License, Version 2.0 (the "License");               #
+# you may not use this file except in compliance with the License.              #
+# See LICENSE.apache.md in the top directory for details.                       #
+# You may obtain a copy of the License at                                       #
+#                                                                               #
+#   http://www.apache.org/licenses/LICENSE-2.0                                  #
+#                                                                               #
+# Unless required by applicable law or agreed to in writing, software           #
+# distributed under the License is distributed on an "AS IS" BASIS,             #
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.      #
+# See the License for the specific language governing permissions and           #
+# limitations under the License.                                                #
+#                                                                               #
+# File:     SSD_tin_can_bottle.py                                               #
+# Authors:                                                                      #
+#           Lorenzo Lamberti    <lorenzo.lamberti@unibo.it>                     #
+#           Luca Bompani        <luca.bompani5@unibo.it>                        #
+#           Manuele Rusci       <manuele.rusci@kuleuven.be>                     #
+#           Daniele Palossi     <dpalossi@ethz.ch> <daniele.palossi@supsi.ch>   #
+# Date:     01.04.2023                                                          #
+#-------------------------------------------------------------------------------#
 
-
+# Description:
+# this script generate 5 new images for each image of the tin can's training set (of Open Images)
+# by translating each image of a percentage of its lenght (2%, 4%, 6%, 8%, 10%).
 
 from PIL import Image
 import matplotlib.pyplot as plt
