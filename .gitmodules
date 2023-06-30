@@ -7,3 +7,6 @@
 [submodule "viewer-pulp-detector"]
 	path = viewer-pulp-detector
 	url = git@github.com:LorenzoLamberti94/viewer-pulp-detector.git
+[submodule "training/External_utilities"]
+	path = training/External_utilities
+	url = git@github.com:Bomps4/External_utilities.git
