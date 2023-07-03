@@ -10,3 +10,6 @@
 [submodule "training/external/tensorflow-api"]
 	path = training/external/tensorflow-api
 	url = https://github.com/Bomps4/tensorflow-api-03.2020
+[submodule "training/external/cocoapi"]
+	path = training/external/cocoapi
+	url = git@github.com:cocodataset/cocoapi.git
