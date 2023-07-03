@@ -96,8 +96,8 @@ from google.protobuf import text_format
 import sys
 
 # Add Tensorflow Object Detection API "models" directory to import libraries: https://github.com/tensorflow/models/
-sys.path.append('./External_utilities/tensorflow-api/research/')
-sys.path.append('./External_utilities/tensorflow-api/research/slim/')
+sys.path.append('./external/tensorflow-api/research/')
+sys.path.append('./external/tensorflow-api/research/slim/')
 
 from object_detection import export_tflite_ssd_graph_lib
 from object_detection.protos import pipeline_pb2
