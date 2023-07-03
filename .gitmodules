@@ -7,3 +7,6 @@
 [submodule "viewer-pulp-detector"]
 	path = viewer-pulp-detector
 	url = git@github.com:LorenzoLamberti94/viewer-pulp-detector.git
+[submodule "training/external/tensorflow-api"]
+	path = training/external/tensorflow-api
+	url = https://github.com/Bomps4/tensorflow-api-03.2020
