@@ -17,4 +17,4 @@ All the files in this dataset can be downloaded from this [link](https://zenodo.
 
 
 ## License
-We release this dataset as open source under Creative Commons Attribution Non Commercial No Derivatives 4.0 International, see [license](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode)
+We release this dataset as open source under Creative Commons Attribution Non Commercial No Derivatives 4.0 International, see [license](../Licence.CC.md)
