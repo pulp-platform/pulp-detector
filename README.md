@@ -89,9 +89,9 @@ All files under:
 are original and licensed under Apache-2.0, see [LICENSE.Apache.md](LICENSE.Apache.md).
 
 
-All files under:
+The files used for the training and testing need to be copied into the folder:
   * `dataset/`
-are original and licensed under under Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License, see [LICENSE.CC.md](LICENSE.CC.md).
+all the files can be downloaded from this [link](10.5281/zenodo.8421461) 
 
 
 
