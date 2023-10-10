@@ -91,7 +91,7 @@ are original and licensed under Apache-2.0, see [LICENSE.Apache.md](LICENSE.Apac
 
 The files used for the training and testing need to be copied into the folder:
   * `dataset/`
-all the files can be downloaded from this [link](https://zenodo.org/record/8421461) and are under the Creative Commons Attribution Non Commercial No Derivatives 4.0 International see [Licence.CC.md](Licence.CC.md)
+all the files can be downloaded from this [link](https://zenodo.org/record/8421461) and are under the Creative Commons Attribution Non Commercial No Derivatives 4.0 International see [LICENSE.CC.md](LICENSE.CC.md)
 
 
 
