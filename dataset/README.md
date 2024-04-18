@@ -11,7 +11,7 @@ Each folder contains a variable number of gray-scale .jpg images, ordered by num
 
 We provide also the TF Record files needed for the Tensorflow training: `mytestset_test.record`, `finetuning-2-train.record`.
 
-All the files in this dataset can be downloaded from this [link](https://zenodo.org/record/8421461).
+All the files in this dataset can be downloaded from this [link](https://zenodo.org/doi/10.5281/zenodo.8421460).
 
 <img style="float: left;" src="../images/dataset_samples.png" width="100%">
 
