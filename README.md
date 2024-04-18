@@ -101,7 +101,7 @@ Are from [Tensorflow](https://github.com/tensorflow/models/), released under  Ap
 
 
 All files under:
-  * `./gap8_app/`
+  * `./gap8_app/` (excelt for `./gap8_app/SSD_tin_can_bottle.c`)
 
 Are from [GreenWaves Technologies](https://github.com/GreenWaves-Technologies), released under a BSD License, see [LICENSE.BSD.md](LICENSE.BSD.md)
 
