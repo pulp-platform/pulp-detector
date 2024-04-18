@@ -23,8 +23,8 @@ Publications:
 ~~~~
 @INPROCEEDINGS{pulp_ssd,
   author={Lamberti, Lorenzo and Bompani, Luca and Kartsch, Victor Javier and Rusci, Manuele and Palossi, Daniele and Benini, Luca},
-  booktitle={2023 Design, Automation \& Test in Europe Conference \& Exhibition (DATE)}, 
-  title={{{Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones}}}, 
+  booktitle={2023 Design, Automation \& Test in Europe Conference \& Exhibition (DATE)},
+  title={{{Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones}}},
   year={2023},
   volume={},
   number={},
@@ -89,7 +89,7 @@ All files under:
 are original and licensed under Apache-2.0, see [LICENSE.Apache.md](LICENSE.Apache.md).
 
 
-The files used for the training and testing need to be copied into the folder:
+The images used for the training and testing need to be downloaded and copied into the following folder:
   * `dataset/`
 all the files can be downloaded from this [link](https://zenodo.org/record/8421461) and are under the Creative Commons Attribution Non Commercial No Derivatives 4.0 International see [LICENSE.CC.md](LICENSE.CC.md)
 
@@ -110,5 +110,5 @@ The external modules under:
   * `viewer-pulp-detector/`
   * `pulp-detector/crazyflie_app/crazyflie-firmware`
   * `pulp-detector/crazyflie_app/crazyflie-firmware-modified`
-    
+
 Are from [Bitcraze](https://github.com/bitcraze), released under a GPL-3.0 license.
