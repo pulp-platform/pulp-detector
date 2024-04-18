@@ -86,20 +86,20 @@ All files under:
   * `./crazyflie_app/random-following-spiral`
   * `./crazyflie_app/rotate`
   * `./gap8_app/SSD_tin_can_bottle.c`
-  *
+
 are original and licensed under Apache-2.0, see [LICENSE.Apache.md](LICENSE.Apache.md).
 
 
 The images used for the training and testing need to be downloaded and copied into the following folder:
   * `dataset/`
-  *
+
 all the files can be downloaded from this [link](https://zenodo.org/record/8421461) and are under the Creative Commons Attribution Non Commercial No Derivatives 4.0 International see [LICENSE.CC.md](LICENSE.CC.md)
 
 
 
 All files under:
   * `./training/`
-  *
+
 Are from [Tensorflow](https://github.com/tensorflow/models/), released under  Apache-2.0 License, see [LICENSE.Apache.md](LICENSE.Apache.md).
 
 
