@@ -2,7 +2,7 @@
 # All rights reserved.
 
 # This software may be modified and distributed under the terms
-# of the BSD license.  See the LICENSE file for details.
+# of the BSD license.  See the LICENSE.BSD.md file for details.
 
 MODEL_SUFFIX?=
 
@@ -23,7 +23,7 @@ MODEL_TENSORS = $(MODEL_BUILD)/$(MODEL_PREFIX)_L3_Flash_Const.dat
 MODEL_STATE = $(MODEL_BUILD)/$(MODEL_PREFIX).json
 MODEL_SRC = $(MODEL_PREFIX)Model.c
 MODEL_HEADER = $(MODEL_PREFIX)Info.h
-MODEL_GEN = $(MODEL_BUILD)/$(MODEL_PREFIX)Kernels 
+MODEL_GEN = $(MODEL_BUILD)/$(MODEL_PREFIX)Kernels
 MODEL_GEN_C = $(addsuffix .c, $(MODEL_GEN))
 MODEL_GEN_CLEAN = $(MODEL_GEN_C) $(addsuffix .h, $(MODEL_GEN))
 MODEL_GEN_EXE = $(MODEL_BUILD)/GenTile

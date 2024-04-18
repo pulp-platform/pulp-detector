@@ -2,7 +2,7 @@
 # All rights reserved.
 
 # This software may be modified and distributed under the terms
-# of the BSD license.  See the LICENSE file for details.
+# of the BSD license.  See the LICENSE.BSD.md file for details.
 
 ifndef GAP_SDK_HOME
   $(error Source sourceme in gap_sdk first)
@@ -30,11 +30,11 @@ include common/model_decl.mk
 APP = SSD_tin_can_bottle
 
 APP_SRCS += $(MAIN) $(MODEL_COMMON_SRCS) $(CNN_LIB)
-APP_SRCS += BUILD_MODEL_SSD/SSD_tin_can_bottleKernels.c  
+APP_SRCS += BUILD_MODEL_SSD/SSD_tin_can_bottleKernels.c
 
 APP_CFLAGS += -O3
 APP_CFLAGS += -I. -I$(MODEL_COMMON_INC) -I$(TILER_EMU_INC) -I$(TILER_INC) $(CNN_LIB_INCLUDE)
-APP_CFLAGS += -IBUILD_MODEL_SSD 
+APP_CFLAGS += -IBUILD_MODEL_SSD
 APP_LDFLAGS += -lgaplib
 
 
@@ -68,7 +68,7 @@ ifeq '$(TARGET_CHIP_FAMILY)' 'GAP9'
 else #GAP8
 	CLUSTER_STACK_SIZE=4096
 	CLUSTER_SLAVE_STACK_SIZE=1024
-	TOTAL_STACK_SIZE=$(shell expr $(CLUSTER_STACK_SIZE) \+ $(CLUSTER_SLAVE_STACK_SIZE) \* 7)	
+	TOTAL_STACK_SIZE=$(shell expr $(CLUSTER_STACK_SIZE) \+ $(CLUSTER_SLAVE_STACK_SIZE) \* 7)
 	ifeq '$(TARGET_CHIP)' 'GAP8_V3'
 	FREQ_CL?=175
 	else
@@ -101,11 +101,11 @@ PLPBRIDGE_FLAGS += -f
 
 
 BUILD_MODEL_SSD/ssdlite_ocrKernels.c:
-	make -f ssd.mk model CLUSTER_STACK_SIZE=$(CLUSTER_STACK_SIZE) CLUSTER_SLAVE_STACK_SIZE=$(CLUSTER_SLAVE_STACK_SIZE) 
-	
+	make -f ssd.mk model CLUSTER_STACK_SIZE=$(CLUSTER_STACK_SIZE) CLUSTER_SLAVE_STACK_SIZE=$(CLUSTER_SLAVE_STACK_SIZE)
+
 
 # all depends on the models
-all:: BUILD_MODEL_SSD/ssdlite_ocrKernels.c 
+all:: BUILD_MODEL_SSD/ssdlite_ocrKernels.c
 
 clean::
 	rm -rf BUILD*

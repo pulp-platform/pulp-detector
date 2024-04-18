@@ -2,7 +2,7 @@
 # All rights reserved.
 
 # This software may be modified and distributed under the terms
-# of the BSD license.  See the LICENSE file for details.
+# of the BSD license.  See the LICENSE.BSD.md file for details.
 
 ifndef GAP_SDK_HOME
   $(error Source sourceme in gap_sdk first)
@@ -94,7 +94,7 @@ PLPBRIDGE_FLAGS += -f
 
 # all depends on the model
 all:: model
-	
+
 
 clean:: clean_model
 

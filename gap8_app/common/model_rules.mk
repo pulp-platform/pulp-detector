@@ -2,7 +2,7 @@
 # All rights reserved.
 
 # This software may be modified and distributed under the terms
-# of the BSD license.  See the LICENSE file for details.
+# of the BSD license.  See the LICENSE.BSD.md file for details.
 
 # The training of the model is slightly different depending on
 # the quantization. This is because in 8 bit mode we used signed
