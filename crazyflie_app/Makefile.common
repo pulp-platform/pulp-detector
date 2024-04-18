@@ -15,12 +15,9 @@
 # See the License for the specific language governing permissions and           #
 # limitations under the License.                                                #
 #                                                                               #
-# File:     SSD_tin_can_bottle.py                                               #
 # Authors:                                                                      #
 #           Lorenzo Lamberti    <lorenzo.lamberti@unibo.it>                     #
 #           Luca Bompani        <luca.bompani5@unibo.it>                        #
-#           Manuele Rusci       <manuele.rusci@kuleuven.be>                     #
-#           Daniele Palossi     <dpalossi@ethz.ch> <daniele.palossi@supsi.ch>   #
 # Date:     01.04.2023                                                          #
 #-------------------------------------------------------------------------------#
 
