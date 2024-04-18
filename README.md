@@ -83,9 +83,9 @@ git clone git@github.com:pulp-platform/pulp-detector.git --recursive
 ## License
 
 All files under:
-  * `crazyflie_app/random-following-spiral`
-  * `crazyflie_app/rotate`
-  * `gap8_app/SSD_tin_can_bottle.c`
+  * `./crazyflie_app/random-following-spiral`
+  * `./crazyflie_app/rotate`
+  * `./gap8_app/SSD_tin_can_bottle.c`
 are original and licensed under Apache-2.0, see [LICENSE.Apache.md](LICENSE.Apache.md).
 
 
@@ -96,19 +96,19 @@ all the files can be downloaded from this [link](https://zenodo.org/record/84214
 
 
 All files under:
-  * `training/`
+  * `./training/`
 Are from [Tensorflow](https://github.com/tensorflow/models/), released under  Apache-2.0 License, see [LICENSE.Apache.md](LICENSE.Apache.md).
 
 
 All files under:
-  * `pulp-detector/gap8_app`
+  * `./gap8_app/`
 
 Are from [GreenWaves Technologies](https://github.com/GreenWaves-Technologies), released under a BSD License, see [LICENSE.BSD.md](LICENSE.BSD.md)
 
 
 The external modules under:
-  * `viewer-pulp-detector/`
-  * `pulp-detector/crazyflie_app/crazyflie-firmware`
-  * `pulp-detector/crazyflie_app/crazyflie-firmware-modified`
+  * `./viewer-pulp-detector/`
+  * `./crazyflie_app/crazyflie-firmware`
+  * `./crazyflie_app/crazyflie-firmware-modified`
 
 Are from [Bitcraze](https://github.com/bitcraze), released under a GPL-3.0 license.
