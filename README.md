@@ -1,9 +1,11 @@
 # PULP-Detector
 
+Copyright (C) 2023 ***University of Bologna***, ***ETH Zürich***. All rights reserved.
+
 Authors: *Lorenzo Lamberti*, *Luca Bompani*, *Victor Javier Kartsch*, *Manuele Rusci*, *Daniele Palossi*, *Luca Benini*.
+
 Emails: <lorenzo.lamberti@unibo.it>,  <luca.bompani5@unibo.it>
 
-Copyright (C) 2023 ***University of Bologna***, ***ETH Zürich***. All rights reserved.
 
 <img style="float: left;" src="images/cover.png" width="100%">
 
