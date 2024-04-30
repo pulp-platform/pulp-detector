@@ -1,27 +1,31 @@
-# Tincan and bottle Detection
+# Single shot detector (SSD) CNN
 
-in this repo there are the training, evaluation and deployment scripts used for the deployment of an SSD based object detector, working on Bottles and tin-cans.
+In this repo, there are the training, evaluation, and deployment scripts used for the deployment of an SSD-based object detector.
+
+Objects our CNN can detect: Tin cans and bottles
 
 ## Setting up the environment
 
 There are two steps for this set up first is to set up the python environment needed which can be done using the tensorflow1_15.yml file 
 > conda env create -f tensorflow1_15.yml
 
-then you need to install the gap_sdk which can be installed following the instruction of the official [REPOSITORY](https://github.com/GreenWaves-Technologies/gap_sdk/tree/release-v4.7.0) we have used the release 4.7 for our work.
+then you need to install the gap_sdk, which can be installed following the instruction of the official [repository](https://github.com/GreenWaves-Technologies/gap_sdk/tree/release-v4.7.0). 
+
+Gap-sdk version used in this work: 4.7
 
  
 
-# ON DRONE DEPLOYMENT 
+# Deployment on the nano-drone
 
-This section shows the commands necessary for the deployment of a quantized neural network on Gap8.
+This section shows the commands necessary for the deployment of a quantized neural network on the GAP8 SoC, which is on the AI-Deck of the nano drone.
 
-## TO DEPLOY  ON DRONE
+## How to run the CNN on GAP8
  
 You need to source the correct configuration this can be done with the following command: 
 
 `source path/to/gap_sdk/configs/ai_deck.sh`
 
-once this is done you need to export the GAPY_OPENOCD_CABLE which can be done with the command
+Once this is done, you need to export the GAPY_OPENOCD_CABLE, which can be done with the command
 
 `export GAPY_OPENOCD_CABLE=path/to/gap_sdk/utils/gap8-openocd/tcl/interface/ftdi/olimex-arm-usb-ocd-h.cfg`
 
@@ -33,7 +37,7 @@ and run the application on the drone.
 
 To  visualize the detections being performed by the drone you need first to connect to the Bitcraze AI-deck example wi-fi network.
 
-The script requires the gi package which can be installed following this [GUIDE](https://pygobject.readthedocs.io/en/latest/getting_started.html#ubuntu-getting-started)
+The script requires the gi package, which can be installed following this [GUIDE](https://pygobject.readthedocs.io/en/latest/getting_started.html#ubuntu-getting-started)
 
  Then you need to run the viewer_custom.py with :
 ```python viewer_custom.py ```
