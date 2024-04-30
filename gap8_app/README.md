@@ -4,7 +4,7 @@ In this repo, there are the training, evaluation, and deployment scripts used fo
 
 Objects our CNN can detect: Tin cans and bottles
 
-## Setting up the environment
+## Setup
 
 There are two steps for this set up first is to set up the python environment needed which can be done using the tensorflow1_15.yml file 
 > conda env create -f tensorflow1_15.yml
@@ -15,11 +15,11 @@ Gap-sdk version used in this work: 4.7
 
  
 
-# Deployment on the nano-drone
+## Deployment on the nano-drone
 
 This section shows the commands necessary for the deployment of a quantized neural network on the GAP8 SoC, which is on the AI-Deck of the nano drone.
 
-## How to run the CNN on GAP8
+### How to run the CNN on GAP8
  
 You need to source the correct configuration this can be done with the following command: 
 
@@ -33,7 +33,7 @@ the last step for the deployment is to use the :
 `make clean all run`
 and run the application on the drone.
 
-## VISUALIZATION
+### Visualize camera stream and detections
 
 To  visualize the detections being performed by the drone you need first to connect to the Bitcraze AI-deck example wi-fi network.
 
