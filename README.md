@@ -1,29 +1,17 @@
-# PULP-Detector
+<h1 align="center">PULP-Detector</h1>
 
-Copyright (C) 2023 ***University of Bologna***, ***ETH Zürich***. All rights reserved.
+<p align="center"><b>Lorenzo Lamberti, Luca Bompani, Victor Javier Kartsch, Manuele Rusci, Daniele Palossi, Luca Benini.</b></p>
+  
+<p align="center"> <i> Copyright (C) 2023 University of Bologna, ETH Zürich. All rights reserved. </i> </p>
 
-Authors: *Lorenzo Lamberti*, *Luca Bompani*, *Victor Javier Kartsch*, *Manuele Rusci*, *Daniele Palossi*, *Luca Benini*.
+<img style="float: center;" src="images/cover.png" width="100%">
 
-Emails: <lorenzo.lamberti@unibo.it>,  <luca.bompani5@unibo.it>
+**&#x23F5; Video:** [YouTube](https://youtu.be/BTin8g0nyko)
 
-
-<img style="float: left;" src="images/cover.png" width="100%">
-
-
-### **Videos**
-
-**Exploration and Detection Demo**: [YouTube](https://youtu.be/BTin8g0nyko)
-
-### **Citing**
-
-If you use **PULP-Detector** in an academic or industrial context, please cite the following publications:
-
-Publications:
-* *Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones* ([arXiv preprint](https://arxiv.org/abs/2301.12175) - [DATE conference](https://ieeexplore.ieee.org/abstract/document/10137154))
-
+**&#x23F5; Citing:** *"Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones"* ([IEEExplore](https://ieeexplore.ieee.org/abstract/document/10137154), [arXiv](https://arxiv.org/abs/2301.12175))
 
 ~~~~
-@INPROCEEDINGS{pulp_ssd,
+@INPROCEEDINGS{pulp_detector,
   author={Lamberti, Lorenzo and Bompani, Luca and Kartsch, Victor Javier and Rusci, Manuele and Palossi, Daniele and Benini, Luca},
   booktitle={2023 Design, Automation \& Test in Europe Conference \& Exhibition (DATE)},
   title={{{Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones}}},
@@ -82,7 +70,7 @@ git clone git@github.com:pulp-platform/pulp-detector.git --recursive
 
 
 
-## License
+## Licenses
 
 All files under:
   * `./crazyflie_app/random-following-spiral`
@@ -117,3 +105,5 @@ The external modules under:
   * `./crazyflie_app/crazyflie-firmware-modified`
 
 Are from [Bitcraze](https://github.com/bitcraze), released under a GPL-3.0 license.
+
+
