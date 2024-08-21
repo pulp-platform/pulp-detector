@@ -12,18 +12,29 @@ style=for-the-badge
 style=flat-square
  -->
 
-
 <h1 align="center">PULP-Detector</h1>
 
 <p align="center"><b>Lorenzo Lamberti, Luca Bompani, Victor Javier Kartsch, Manuele Rusci, Daniele Palossi, Luca Benini.</b></p>
-  
-<p align="center"> <i> Copyright (C) 2023 University of Bologna, ETH Zürich. All rights reserved. </i> </p>
+
+<p align="center"> 
+  <i> Copyright (C) 2023 University of Bologna, ETH Zürich. All rights reserved. </i> 
+</p>
+
+<div align="center" style="margin-bottom: 20px;">
+  <a href="https://youtu.be/BTin8g0nyko" style="font-weight: bold;"> <strong> Video Demo </strong></a>
+    ·
+  <a href="https://ieeexplore.ieee.org/document/10137154" style="font-weight: bold;"><strong> IEEExplore </strong></a>
+    ·
+  <a href="https://arxiv.org/abs/2301.12175" style="font-weight: bold;"><strong> arXiv </strong></a>
+</div>
+
+<br>
 
 <img style="float: center;" src="images/cover.png" width="100%">
 
-**&#x23F5; Video:** [YouTube](https://youtu.be/BTin8g0nyko)
+**Video:** [YouTube](https://youtu.be/BTin8g0nyko)
 
-**&#x23F5; Citing:** *"Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones"* ([IEEExplore](https://ieeexplore.ieee.org/abstract/document/10137154), [arXiv](https://arxiv.org/abs/2301.12175))
+**Citing:** *"Bio-inspired Autonomous Exploration Policies with CNN-based Object Detection on Nano-drones"* ([IEEExplore](https://ieeexplore.ieee.org/abstract/document/10137154), [arXiv](https://arxiv.org/abs/2301.12175))
 
 ~~~~
 @INPROCEEDINGS{pulp_detector,
