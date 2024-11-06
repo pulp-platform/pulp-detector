@@ -3,7 +3,7 @@
   <img alt="GitHub forks" src="https://img.shields.io/github/forks/pulp-platform/pulp-detector?style=flat-square">
   <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/pulp-platform/pulp-detector?style=flat-square">
   <img alt="GitHub License" src="https://img.shields.io/github/contributors/pulp-platform/pulp-detector?style=flat-square">
-  <img alt="GitHub License" src="https://img.shields.io/github/license/pulp-platform/pulp-detector?style=flat-square">
+  <img alt="GitHub License" src="https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square">
 </div>
 
 <!-- Possible styles
