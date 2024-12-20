@@ -51,11 +51,7 @@ else
 	endif
 	FREQ_FC?=250
 	MODEL_L1_MEMORY=$(shell expr 64000 \- $(TOTAL_STACK_SIZE))
-<<<<<<< HEAD:deployment/ssd.mk
-	MODEL_L2_MEMORY=230000
-=======
 	MODEL_L2_MEMORY=250000
->>>>>>> d3cfc99de3af3c44efc90c41f2607b41eaff72b8:ssd.mk
 	MODEL_L3_MEMORY=8388608
 endif
 # hram - HyperBus RAM
