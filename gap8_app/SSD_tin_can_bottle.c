@@ -283,9 +283,9 @@ static void detection_handler(){
 
       uint32_t time_begin=rt_time_get_us();
       LED_ON;
-      //uint32_t error_cluster = pi_cluster_send_task_to_cl(&cluster_dev, task);
+          uint32_t error_cluster = pi_cluster_send_task_to_cl(&cluster_dev, task);
       #ifdef VERBOSE
-        printf("sent task to clusted \t\t\t\t%s\n", error_cluster?"Ok":"Failed");
+        printf("sent task to clusted \t\t\t\t%s\n", error_cluster?"Failed":"Ok");
       #endif
      #ifdef PERFORMANCE
         PRINTF("TOTAL TIME IN MICROSECONDS: %d \n",rt_time_get_us()-time_begin);
